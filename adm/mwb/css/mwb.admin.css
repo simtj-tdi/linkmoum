@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+/* 설치 */
+#mwb_install {padding:20px 20px 0}
+#mwb_install h2 {margin:0;padding:0 0 20px}
+#mwb_install ol {margin:0 0 20px;padding:0 0 0 20px}
+#mwb_install li {margin:0 0 10px}
+
+/* MWB-GB 설치하기 관련 */
+.mwb_admin_install td {padding:15px 5px; }
+.mwb_admin_install p {font-weight:bold; padding-left:5px; }
+.mwb_admin_install a {padding: 5px 10px; background: #383a3f; color:#fff; text-align:center; text-decoration:none; display:inline-block;}
+.mwb_admin_install a.disactive {background:#c7c7c7; }
+.mwb_admin_install img {width:50px; height:50px; vertical-align:middle; }
+
+/* MWB-GB 페이지 내 안내문 */
+.mwb_local_desc {}
+.mwb_local_desc ol, .local_desc ul {margin:0;padding:0 0 10px 21px}
+.mwb_local_desc li {margin:0 0 5px}
+
+.mwb_local_desc01 {margin:0 20px 10px;padding:10px 20px;min-width:920px;border:1px solid #f2f2f2;background:#3f51b5;color: #eee; }
+.mwb_local_desc01 strong {color:#ff3061}
+.mwb_local_desc01 a {text-decoration:none;color:#4CABAF;font-weight:bold; border:1px #4CABAF dashed; padding:3px; margin-right:3px; }
+
+.mwb_local_desc02 {margin:0 20px 10px;min-width:960px} /* 주로 온라인 서식 관련 안내 내용에 사용 */
+.mwb_local_desc02 p {padding:0;line-height:1.8em}
