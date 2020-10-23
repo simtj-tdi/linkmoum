@@ -285,6 +285,11 @@ if(!sql_query(" select it_skin from {$g5['g5_shop_item_table']} limit 1", false)
             </td>
         </tr>
         <tr>
+            <th scope="row">상품설명</th>
+            <td colspan="2"> <?php echo editor_html('it_explan', get_text(html_purifier($it['it_explan']), 0)); ?></td>
+        </tr>        
+
+        <tr>
             <th scope="row"><label for="it_order">출력순서</label></th>
             <td>
                 <?php echo help("숫자가 작을 수록 상위에 출력됩니다. 음수 입력도 가능하며 입력 가능 범위는 -2147483648 부터 2147483647 까지입니다.\n<b>입력하지 않으면 자동으로 출력됩니다.</b>"); ?>
@@ -302,15 +307,15 @@ if(!sql_query(" select it_skin from {$g5['g5_shop_item_table']} limit 1", false)
             <td>
                 <?php echo help("메인화면에 유형별로 출력할때 사용합니다.\n이곳에 체크하게되면 상품리스트에서 유형별로 정렬할때 체크된 상품이 가장 먼저 출력됩니다."); ?>
                 <input type="checkbox" name="it_type1" value="1" <?php echo ($it['it_type1'] ? "checked" : ""); ?> id="it_type1">
-                <label for="it_type1">히트 <img src="<?php echo G5_SHOP_URL; ?>/img/icon_hit.gif" alt=""></label>
+                <label for="it_type1">신규 </label>
                 <input type="checkbox" name="it_type2" value="1" <?php echo ($it['it_type2'] ? "checked" : ""); ?> id="it_type2">
-                <label for="it_type2">추천 <img src="<?php echo G5_SHOP_URL; ?>/img/icon_rec.gif" alt=""></label>
+                <label for="it_type2">인기 </label>
                 <input type="checkbox" name="it_type3" value="1" <?php echo ($it['it_type3'] ? "checked" : ""); ?> id="it_type3">
-                <label for="it_type3">신상품 <img src="<?php echo G5_SHOP_URL; ?>/img/icon_new.gif" alt=""></label>
+                <label for="it_type3">추천 </label>
                 <input type="checkbox" name="it_type4" value="1" <?php echo ($it['it_type4'] ? "checked" : ""); ?> id="it_type4">
-                <label for="it_type4">인기 <img src="<?php echo G5_SHOP_URL; ?>/img/icon_best.gif" alt=""></label>
+                <label for="it_type4">강추 </label>
                 <input type="checkbox" name="it_type5" value="1" <?php echo ($it['it_type5'] ? "checked" : ""); ?> id="it_type5">
-                <label for="it_type5">할인 <img src="<?php echo G5_SHOP_URL; ?>/img/icon_discount.gif" alt=""></label>
+                <label for="it_type5">무인증 </label>
             </td>
             <td class="td_grpset">
                 <input type="checkbox" name="chk_ca_it_type" value="1" id="chk_ca_it_type">
@@ -480,30 +485,7 @@ function fitemformcheck(f)
         }
     }
 
-    if(f.it_point_type.value == "1" || f.it_point_type.value == "2") {
-        var point = parseInt(f.it_point.value);
-        if(point > 99) {
-            alert("포인트 비율을 0과 99 사이의 값으로 입력해 주십시오.");
-            return false;
-        }
-    }
 
-    if(parseInt(f.it_sc_type.value) > 1) {
-        if(!f.it_sc_price.value || f.it_sc_price.value == "0") {
-            alert("기본배송비를 입력해 주십시오.");
-            return false;
-        }
-
-        if(f.it_sc_type.value == "2" && (!f.it_sc_minimum.value || f.it_sc_minimum.value == "0")) {
-            alert("배송비 상세조건의 주문금액을 입력해 주십시오.");
-            return false;
-        }
-
-        if(f.it_sc_type.value == "4" && (!f.it_sc_qty.value || f.it_sc_qty.value == "0")) {
-            alert("배송비 상세조건의 주문수량을 입력해 주십시오.");
-            return false;
-        }
-    }
 
     // 관련상품처리
     var item = new Array();

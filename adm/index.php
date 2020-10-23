@@ -1,7 +1,7 @@
 <?php
 
-header('Location: ./shop_admin/categorylist.php');
-exit;
+//header('Location: ./shop_admin/categorylist.php');
+//exit;
 
 $sub_menu = '100000';
 include_once('./_common.php');

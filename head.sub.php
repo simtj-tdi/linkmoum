@@ -40,7 +40,6 @@ header("Pragma: no-cache"); // HTTP/1.0
 <!doctype html>
 <html lang="ko">
 <head>
-    123123
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171614918-1"></script>
     <script>

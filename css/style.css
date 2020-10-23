@@ -1,0 +1,175 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #f9f9f9 !important;
+    color: #000;
+    font-size: 16px;
+}
+
+
+a,a:hover,a:visited,a:link {
+    text-decoration: none;
+    background: transparent;
+}
+
+ol, ul, dl {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+.header {
+    width: 100%;
+    background: #1f4952;
+    height: 70px;
+    line-height: 70px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.header a {
+    color: #fff;
+}
+
+.list {
+    border: 1px solid #dfdfdf;
+    border-radius: 5px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.list-title {
+    background: #1f4952;
+    color: #fff;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: center;
+}
+
+.list-img {
+    background: #fff;
+    text-align: center;
+}
+
+.list-img .screen {
+    border: 0;
+    width: 200px;
+    height: 100px;
+}
+
+.list-text {
+    padding: 10px;
+    font-size: 12px;
+}
+
+.list-point {
+    text-align: center;
+    font-size: 12px;
+    background: #ff0231;
+    color: #fff;
+}
+
+.list-btn {
+    width: 70%;
+    padding: 5px 0;
+    margin: 0 auto;
+    background: #1f4952;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    height: 40px;
+    line-height: 32px;
+}
+
+.card-text {
+    font-size: 12px;
+    text-align: center;
+}
+
+.list-icon {
+    text-align: center;
+}
+
+.list-icon .icon-new {
+    width: 34px;
+    font-size: 10px;
+    font-weight: bold;
+    color: #fff;
+    background: #e80040;
+    text-align: center;
+    border-radius: 2.5px;
+    padding: 2.5px;
+}
+
+.list-icon .icon-pop {
+    width: 34px;
+    font-size: 10px;
+    font-weight: bold;
+    color: #fff;
+    background: #1f4952;
+    text-align: center;
+    border-radius: 2.5px;
+    padding: 2.5px;
+}
+
+.list-icon .icon-rec {
+    width: 34px;
+    font-size: 10px;
+    font-weight: bold;
+    color: #fff;
+    background: #23796d;
+    text-align: center;
+    border-radius: 2.5px;
+    padding: 2.5px;
+}
+
+.list-icon .icon-vip {
+    width: 34px;
+    font-size: 10px;
+    font-weight: bold;
+    color: #fff;
+    background: #000;
+    text-align: center;
+    border-radius: 2.5px;
+    padding: 2.5px;
+}
+
+.list-icon .icon-no {
+    width: 34px;
+    font-size: 10px;
+    font-weight: bold;
+    color: #fff;
+    background: #6870d4;
+    text-align: center;
+    border-radius: 2.5px;
+    padding: 2.5px;
+}
+
+.foot {
+    font-size: 12px;
+    color: #9e8383;
+}
+
+@media (max-width: 576px) {
+
+    .header {
+        text-align: center;
+    }
+
+}
+
+@media (min-width: 575px) {
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}

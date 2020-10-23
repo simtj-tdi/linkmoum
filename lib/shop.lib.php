@@ -1472,22 +1472,22 @@ function item_icon($it)
 {
     global $g5;
 
-    $icon = '<span class="sit_icon">';
+    $icon = '<div class="list-icon">';
 
     if ($it['it_type1'])
-        $icon .= '<span class="shop_icon shop_icon_1">히트</span>';
+        $icon .= '<span class="icon-new">신규</span>&nbsp;';
 
     if ($it['it_type2'])
-        $icon .= '<span class="shop_icon shop_icon_2">추천</span>';
+        $icon .= '<span class="icon-pop">인기</span>&nbsp;';
 
     if ($it['it_type3'])
-        $icon .= '<span class="shop_icon shop_icon_3">최신</span>';
+        $icon .= '<span class="icon-rec">추천</span>&nbsp;';
 
     if ($it['it_type4'])
-        $icon .= '<span class="shop_icon shop_icon_4">인기</span>';
+        $icon .= '<span class="icon-vip">강추</span>&nbsp;';
 
     if ($it['it_type5'])
-        $icon .= '<span class="shop_icon shop_icon_5">할인</span>';
+        $icon .= '<span class="icon-no">무인증</span>&nbsp;';
 
 
     // 쿠폰상품
@@ -1504,7 +1504,7 @@ function item_icon($it)
     if($row['cnt'])
         $icon .= '<span class="shop_icon shop_icon_coupon">쿠폰</span>';
 
-    $icon .= '</span>';
+    $icon .= '</div>';
 
     return $icon;
 }

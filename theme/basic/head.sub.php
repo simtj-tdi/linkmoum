@@ -102,39 +102,38 @@ if(G5_IS_MOBILE) {
 if(!defined('G5_IS_ADMIN'))
     echo $config['cf_add_script'];
 ?>
-
-    <style type="text/css">
-        .hbox-menu {
-            /*margin-top:4px;*/
-            width:100%;
-            border:none;
-            background-color: white;
-            display: inline-block;
-            overflow: hidden;
-            height:60px;
-            /*position: absolute;*/
-            /*width: auto;*/
-            /*height: auto;*/
-            vertical-align: middle;
-            line-height: 60px;
-        }
-        .hbox-menu li {
-            float: left; width:11%;
-        }
-        .hbox-menu a {
-            display: block;
-            text-align:center;
-            /*height: 50px;*/
-            /*line-height: 50px;*/
-            /*background-color: #F0E7DB;*/
-            /*color: #666666;*/
-            /*border-right: 1px solid #615C55;*/
-            font-weight:bold;
-        }
-        .hbox-menu li:last-child a {
-            border-right: 0;
-        }
-    </style>
+<!--    <style type="text/css">-->
+<!--        .hbox-menu {-->
+<!--            /*margin-top:4px;*/-->
+<!--            width:100%;-->
+<!--            border:none;-->
+<!--            background-color: white;-->
+<!--            display: inline-block;-->
+<!--            overflow: hidden;-->
+<!--            height:60px;-->
+<!--            /*position: absolute;*/-->
+<!--            /*width: auto;*/-->
+<!--            /*height: auto;*/-->
+<!--            vertical-align: middle;-->
+<!--            line-height: 60px;-->
+<!--        }-->
+<!--        .hbox-menu li {-->
+<!--            float: left; width:11%;-->
+<!--        }-->
+<!--        .hbox-menu a {-->
+<!--            display: block;-->
+<!--            text-align:center;-->
+<!--            /*height: 50px;*/-->
+<!--            /*line-height: 50px;*/-->
+<!--            /*background-color: #F0E7DB;*/-->
+<!--            /*color: #666666;*/-->
+<!--            /*border-right: 1px solid #615C55;*/-->
+<!--            font-weight:bold;-->
+<!--        }-->
+<!--        .hbox-menu li:last-child a {-->
+<!--            border-right: 0;-->
+<!--        }-->
+<!--    </style>-->
 </head>
 <body<?php echo isset($g5['body_script']) ? $g5['body_script'] : ''; ?>>
 <?php
@@ -144,7 +143,7 @@ if ($is_member) { // 회원이라면 로그인 중이라는 메세지를 출력�
     else if ($is_admin == 'group') $sr_admin_msg = "그룹관리자 ";
     else if ($is_admin == 'board') $sr_admin_msg = "게시판관리자 ";
 
-    echo '<div id="hd_login_msg">'.$sr_admin_msg.get_text($member['mb_nick']).'님 로그인 중 ';
-    echo '<a href="'.G5_BBS_URL.'/logout.php">로그아웃</a></div>';
+//    echo '<div id="hd_login_msg">'.$sr_admin_msg.get_text($member['mb_nick']).'님 로그인 중 ';
+//    echo '<a href="'.G5_BBS_URL.'/logout.php">로그아웃</a></div>';
 }
 ?>
